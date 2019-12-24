@@ -20,7 +20,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav" id="main-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="home.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Projects</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Posts</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
@@ -28,65 +28,83 @@
             </div>
         </div>
     </nav>
-    <main></main>
-    <div>
-        <div class="container">
-            <div class="row" id="row1">
-                <div class="col-md-8">
-                    <div class="row" id="top-article">
-                        <div class="col">
-                            <div id="article" class="article">
-                                <div id="title">
-                                    <div class="row">
-                                        <div class="col" id="titletitle">
-                                            <h3>First Post<br></h3>
-                                        </div>
-                                        <div class="col" id="writtendata">
-                                            <p class="written-field">Written 12/20/19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="article-body">
-                                    <p>Welcome to the first post on my first website. It’s been catastrophic programming this thing, let me know if there is a good book/class/tutorial you have for building web pages. (Current issue: scaling site with broswer
-                                        zoom)<br><br>Why did I decide to make a website? See my second blog post.<br></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" id="second-article">
-                        <div class="col">
-                            <div id="article" class="article">
-                                <div id="title">
-                                    <div class="row">
-                                        <div class="col" id="titletitle">
-                                            <h3>An Ad for Myself<br></h3>
-                                        </div>
-                                        <div class="col" id="writtendata">
-                                            <p class="written-field">Written 12/20/19</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="article-body">
-                                    <p>Wow, my first click bait (see the last line of First Post if you don’t get it), I won’t do that again, promise. To answer the question, why invest so much time in making a personal website from scratch? There is a balance
-                                        between doing hard work and gaining value from that labor. I believe I tend to spend more time on the former, and I am repeatedly disappointed when I feel that my efforts aren’t rewarded. This is an investment in
-                                        harvesting some value that I think I have should be seeing.<br><br>A more concrete example: after somebody’s done all the work to make an impact in a research field (via some novel method or results), the delivery
-                                        of the work ( often as a publication of some kind) needs done well enough for people to notice the importance of the results. Often we estimate the process of publishing work to be negligible compared to the time
-                                        it takes to do the work worth publishing, but public credit cannot exist without reporting work.<br><br>Really, the fruits of some work/effort being advertised here is myself: accept me to your programs/hire me
-                                        to your professional role, I bet the competition isn’t as foolishly honest nor as mediocre at HTML.<br></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <main>
+        <div class="row" id="photo-and-short-descr">
+            <div class="col" id="photo"><img id="img" src="assets/img/IMG_4099.jpg"></div>
+            <div class="col" id="descr">
+                <h2 id="self-name">Benjamin Danek</h2>
+                <h6 id="self-title">Student, Engineer, Aspiring Academic</h6>
+                <p id="bio-short">I am a Computer Science student in the Fulton Schools at Arizona State University. Outside of classwork I spend time at the Design Informatics Lab working on Adversarial Examples in Reinforcement Learning. I have some engineering experience
+                    from past summers at Lam Research Corporation, Metralight, and a semester working as a computer vision subcontractor at Stackend Solutions.</p>
+            </div>
+        </div>
+        <div class="row" id="full-descr">
+            <div class="col" id="lower-half">
+                <div class="row" id="table-of-contents">
+                    <div class="col subsection-link"><a href="#research">Research</a></div>
+                    <div class="col subsection-link"><a href="#academics">Academics</a></div>
+                    <div class="col subsection-link"><a href="#extracurricular">Extracurricular</a></div>
+                    <div class="col subsection-link"><a href="#personal">Personal</a></div>
                 </div>
-                <div class="col-md-4 text-left d-lg-flex flex-column justify-content-lg-start" id="side-col">
-                    <h3 id="other-posts">Other Posts:</h3>
-                    <ul id="side-bar" class="side-bar">
-                        <li id="side-bar-item" class="other-articles"><a href="#" style="color: #c85a54;">Advertising Hard Results</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col" id="further-lower-half">
+                        <div id="research" class="sub-section">
+                            <article>
+                                <h4 id="first-section-heading">Research</h4>
+                                <p>Under <a href="https://isearch.asu.edu/profile/2422024">Yi Ren</a>&nbsp;at <a href="#">Design Informatics Lab</a>&nbsp;I lead a project in Deep Reinforcement Learning. This project intends to contribute to robust machine
+                                    learning by providing a solution for adversarial attacks on Deep RL agents. Publicly visible work is on&nbsp;<a href="https://github.com/BPDanek/Adversarial_environment">Github</a></p>
+                            </article>
+                        </div>
+                        <div id="academics" class="sub-section">
+                            <article>
+                                <h4>Academics</h4>
+                                <div id="mat342" class="academic-course">
+                                    <h5 id="course-title">MAT 342: Linear Algebra­</h5>
+                                </div>
+                                <div id="mat421" class="academic-course">
+                                    <h5 id="course-title">MAT 421: Applied Computational Methods</h5>
+                                    <p id="course-descr">Sections:<br>&nbsp;Numerical Error, Matrix Factorization,&nbsp;<br>&nbsp;Iterative Approaches for Solving/Finding: <br>&nbsp;&nbsp;&nbsp;&nbsp;Fixed Points, Matrix Decomposition, Gradient Descent, &nbsp;&nbsp;&nbsp;&nbsp;Eigenvalue/Characteristic
+                                        Polynomials<br>&nbsp;Interpolation: <br>&nbsp;&nbsp;&nbsp;&nbsp;Polynomial, Rational &amp; Hermite, Piecewise and Splines&nbsp;<br></p>
+                                </div>
+                                <div id="ses494" class="academic-course">
+                                    <h5 id="course-title">SES 494: Topics: Autonomous Exploration Systems*</h5>
+                                    <p id="course-descr">A technical overview of several contemporary robotics topics. Final project:&nbsp;Why aren’t blimps an academically popular sUAV platform?Sections:&nbsp;<br>&nbsp;Ackerman &amp; Differential Steered Vehicles,&nbsp;sUAS
+                                        (multirotor, VTOL, &nbsp;winged) software ecosystem (PX4, ROS, Gazebo) &amp; hardware &nbsp;ecosystem,&nbsp;Localization (Kalman &amp; Particles filters), Visual &nbsp;Odometry/VIO,&nbsp;Structure for Motion, SLAM,&nbsp;Visual
+                                        Servoing, Academic &nbsp;Literature Review<br></p>
+                                </div>
+                                <div id="cse310" class="academic-course">
+                                    <h5 id="course-title">CSE 310: Data Structures and Algorithms</h5>
+                                    <p id="course-descr">In depth study of some of several classic algorithms including:<br>&nbsp;Sorting Algorithms, Heap Structures and Algorithms, Graph Structures &nbsp;and Algorithms (BFS, DFS, Dijkstras), Search Trees (Binary, RB), &nbsp;Dynamic
+                                        Programming Algorithms (LCS, Linear Time Selection, Matrix &nbsp;Chain)<br></p>
+                                </div>
+                                <div id="iee380" class="academic-course">
+                                    <h5 id="course-title">IEE 380: Probability and Statistics for Engineering Problem Solving</h5>
+                                </div>
+                                <div id="mae494" class="academic-course">
+                                    <h5 id="course-title">MAE 494: Topics: Design Optimization*</h5>
+                                    <p id="course-descr">Continuous Optimization class, involved derivation of fundamental optimization algorithms, applying the derived analytical solutions by hand, applying the iterative solutions in programs (Python and MATLAB). <br>Final
+                                        project reproduced a&nbsp;<a href="https://www.pnas.org/content/114/3/462.full">Journal Paper Ride Scheduling System</a><br>Sections:&nbsp;<br>&nbsp;Unconstrained Optimization, Constrained Optimization, Gradient
+                                        &nbsp;Based Algorithms, Linear and non-parametric regression, Optimal &nbsp;Control<br></p>
+                                </div>
+                            </article>
+                        </div>
+                        <div id="extracurricular" class="sub-section">
+                            <article>
+                                <h4>Extracurriculars</h4>
+                                <p>[to be pdated alongside post]</p>
+                            </article>
+                        </div>
+                        <div id="personal" class="sub-section">
+                            <article>
+                                <h4>Personal</h4>
+                                <p>[to be updated alongside post]</p>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
