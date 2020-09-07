@@ -1,0 +1,17 @@
+.me-page-flexbox-wrapper {
+    display: flex;
+}
+.me-page-flexbox-wrapper > .me-bio-column, .me-content-column {
+
+}
+
+.me-bio-column {
+    background: ;
+    flex: 20%;
+}
+
+.me-content-column {
+    background: aquamarine;
+    flex: 80%;
+}
+
