@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { pages } from "../Page";
+import { pages } from '../Page';
+import './styles.css';
 
 interface Props {
     pageChangeParentReference: (newPageAsString: string) => void;
@@ -14,7 +15,7 @@ export default class ProjectsController extends React.Component<Props, State> {
 
     render() {
         return (
-            <div>
+            <div className="site-navigator-container">
                 <ul>
                     {Object.keys(pages).map(
                         (pageKey: string, index: number) => { return <li>{pages[pageKey]}</li>; }
