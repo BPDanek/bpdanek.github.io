@@ -16,21 +16,21 @@ export default class ProjectsController extends React.Component<Props, State> {
 
     render() {
         return (
-            <div className="site-navigator-container">
-                <ul>
+            <div className={"site-navigator-container"}>
+                <div className={"site-navigator-flex-wrapper"}>
                     {Object.keys(pages).map(
                         (pageKey: string, index: number) => {
-                            return (<li>
+                            return (<div>
                                 <button  onClick={() => {
                                     return this.props.pageChangeParentReference(pages[pageKey])
                                 }}>
                                     {pages[pageKey]}
                                 </button>
-                            </li>)
+                            </div>)
                         }
                     )}
-                </ul>
+                </div>
             </div>
-        );
+        );  
     }
 }

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './styles.css';
 
 import SiteNavigator from "./SiteNavigator/SiteNavigator";
 import MeController from './page_me/MeController';
@@ -51,7 +52,7 @@ export default class Page extends React.Component<Props, State> {
         }
         console.log("Page.tsx render")
         return (
-            <div>
+            <div className={"site-navigator"}>
                 <SiteNavigator pageChangeParentReference={this.handlePageChange} />
                 {currentPageAsComponent}
             </div>

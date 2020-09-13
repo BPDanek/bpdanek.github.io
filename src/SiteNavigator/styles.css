@@ -1,3 +1,12 @@
 .site-navigator-container {
-    background: lightgrey;
+    /*background: #FFC107;*/
+    background: #FFF8E1;
+    padding: 5px 5px 5px 5px;
 }
+
+.site-navigator-flex-wrapper {
+    display: flex;
+    margin-left: 10%;
+    margin-right: auto;
+}
+

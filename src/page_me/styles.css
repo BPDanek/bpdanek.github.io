@@ -1,17 +1,65 @@
 .me-page-flexbox-wrapper {
     display: flex;
 }
-.me-page-flexbox-wrapper > .me-bio-column, .me-content-column {
-
-}
 
 .me-bio-column {
-    background: ;
+    background: #FFF8E1;
+    padding: 10px 15px 10px 15px; /* clockwise directions (top, right, bottom, left) */
     flex: 20%;
 }
-
+/*colors: https://i.pinimg.com/originals/f2/cc/96/f2cc96dfc116cdda3b0a35f190ebed1b.png */
 .me-content-column {
-    background: aquamarine;
+    padding-left: 15px;
+    /*background: #FFD54f;*/
+    background: #FFF8E1;
     flex: 80%;
 }
 
+.me-content-column p {
+    padding-left: 40px;
+}
+
+.me-navigator-for-content-column {
+    display: flex;
+}
+
+.me-navigator-for-content-column a {
+    padding: 0px 20px 0px 0px;
+}
+
+.me-bio-column p {
+    margin: 10px;
+}
+
+.me-bio-column-image {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.me-bio-column-links {
+    display: flex;
+}
+
+.Github-link, .LinkedIn-link, .Twitter-link {
+    margin: 5px;
+    height: 20px;
+}
+
+h1, h2, h3, p {
+    font-family: "Arial";
+}
+
+a:link, a:visited, a:active  {
+    color: black;
+}
+
+a:hover {
+    color: #FF6F00;
+}
+
+a:focus {
+    background: red;
+}
