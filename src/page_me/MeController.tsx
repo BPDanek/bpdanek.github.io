@@ -29,7 +29,7 @@ export default class MeController extends React.Component<Props, State> {
                         <img className={"me-bio-column-image"} src={image_of_me_at_beach} alt={"photo of me on the pacific coast"} />
                     </div>
                     <div className={"me-bio-column-bio"}>
-                        <p>Creator, student, scholar, engineer, in that order.</p>
+                        <p>Creator, student, scholar, engineer.</p>
                         <p>Seeking Full-stack, Front-end, Machine Learning, Research early career engineering roles</p>
                         <div className={"me-bio-column-links"}>
                           <div>
