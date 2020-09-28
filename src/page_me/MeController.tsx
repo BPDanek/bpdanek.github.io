@@ -7,12 +7,14 @@ import github_logo from '../assets/github_logo.jpeg';
 import twitter_logo from '../assets/twitter_logo.jpeg';
 import linkedin_logo from '../assets/linkedin_logo.jpeg';
 
-//content
-import data from '../assets/data.tsx';
+//content that is imported from a json
+import * as data_asset from '../assets/Me-Data/data.json';
+import MeData from '../assets/Me-Data/data_type_interface';
 
 interface Props {};
-
 interface State {};
+
+const text_data: MeData = data_asset;
 
 export default class MeController extends React.Component<Props, State> {
     constructor(props) {
@@ -60,17 +62,35 @@ export default class MeController extends React.Component<Props, State> {
                             <h3>Goals</h3>
                         </a>
                     </div>
-                    <div id={"#about"}>
+                    <div id={"about"}>
                         <h2>About</h2>
-                        <p>{data.about_section}</p>
+                        <p>{text_data.about_section}</p>
                     </div>
-                    <div id={"#courses"}>
+                    <div id={"courses"}>
                         <h2>Courses</h2>
-                        <p>this is where i flex my classes</p>
+                        <div>
+                            {text_data.courses_section.map((course_data: []) => {
+                                return (
+                                    <div>
+                                        <h3>{course_data[0]}</h3>
+                                        <p>{course_data[1]}</p>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
-                    <div id={"#goals"}>
+                    <div id={"goals"}>
                         <h2>Goals</h2>
-                        <p>this is where i show you my long term objectives</p>
+                        <div>
+                            {text_data.goals_section.map((goal_data: []) => {
+                                return (
+                                    <div>
+                                        <h3>{goal_data[0]}</h3>
+                                        <p>{goal_data[1]}</p>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>

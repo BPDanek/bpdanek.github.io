@@ -26,7 +26,11 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS
 
 Color inspiration found at: https://material.io/design/
 
-A special mention goes to the ```display``` attribute for being an MVP
+A special mention goes to the ```display``` attribute for being an MVP with layout.
+
+Another shoutout goes to Typescript 2.9 for implementing json import. I had a bad time trying 
+to make a good data ingestion scheme for quickly pushing to the site. To see what I mean, check  
+```~/src/assets/Me-Data/``` to see how I currently add content to the site.
 
 todo: 
 - update readme w/ discription of app
