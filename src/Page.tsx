@@ -50,7 +50,7 @@ export default class Page extends React.Component<Props, State> {
             default:
                 break;
         }
-        console.log("Page.tsx render")
+
         return (
             <div className={"site-navigator"}>
                 <SiteNavigator pageChangeParentReference={this.handlePageChange} />

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './styles.css';
 
 interface Props {};
 
@@ -11,7 +12,7 @@ export default class PostsController extends React.Component<Props, State> {
 
     render() {
         return (
-            <div>
+            <div className={"posts-controller"}>
                 <h3>
                     I have no posts to show off for now, come back soon because this will be the next Hacker News
                 </h3>

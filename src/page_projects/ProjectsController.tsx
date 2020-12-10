@@ -20,7 +20,6 @@ export default class ProjectsController extends React.Component<Props, State> {
         else {
             this.state = {current_post_index: -1}
         }
-
     }
 
     renderProjectsNavigatorColumn() {

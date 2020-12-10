@@ -1,12 +1,25 @@
 .site-navigator-container {
-    /*background: #FFC107;*/
-    background: #FFF8E1;
-    padding: 5px 5px 5px 5px;
+    background: #ffffffff;
+    padding: 10px 10px 10px 10px;
+    height: 40px;
 }
 
 .site-navigator-flex-wrapper {
     display: flex;
-    margin-left: 10%;
-    margin-right: auto;
+}
+.site-navigator-individual-button {
+    background-color: #ffffffff;
+    width:33%;
+}
+
+.site-navigator-individual-button-itself {
+    background-color: #ddefffff;
+    border: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    width: 99%;
+    height: 45px;
+
+    font-family: Georgia;
 }
 

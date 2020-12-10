@@ -2,10 +2,10 @@ import * as React from 'react';
 import './styles.css';
 
 //images
-import image_of_me_at_beach from '../assets/IMG_5685.jpeg';
-import github_logo from '../assets/github_logo.jpeg';
-import twitter_logo from '../assets/twitter_logo.jpeg';
-import linkedin_logo from '../assets/linkedin_logo.jpeg';
+import image_of_me_headshot from '../assets/images/IMG_6700.jpeg';
+import github_logo from '../assets/images/github_logo.jpeg';
+import twitter_logo from '../assets/images/twitter_logo.jpeg';
+import linkedin_logo from '../assets/images/linkedin_logo.jpeg';
 
 //content that is imported from a json
 import * as data_asset from '../assets/Me-Data/data.json';
@@ -26,7 +26,7 @@ export default class MeController extends React.Component<Props, State> {
             <div className={"me-page-flexbox-wrapper"}>
                 <div className={"me-bio-column"}>
                     <div>
-                        <img className={"me-bio-column-image"} src={image_of_me_at_beach} alt={"photo of me on the pacific coast"} />
+                        <img className={"me-bio-column-image"} src={image_of_me_headshot} alt={"photo of me on the pacific coast"} />
                     </div>
                     <div className={"me-bio-column-bio"}>
                         <p>Creator, student, scholar, engineer.</p>
@@ -49,19 +49,19 @@ export default class MeController extends React.Component<Props, State> {
                           </div>
                         </div>
                     </div>
-                </div>
-                <div className={"me-content-column"}>
                     <div className={"me-navigator-for-content-column"}>
                         <a href={"#about"}>
-                            <h3>About</h3>
+                            <h4>About</h4>
                         </a>
                         <a href={"#courses"}>
-                            <h3>Courses</h3>
+                            <h4>Courses</h4>
                         </a>
                         <a href={"#goals"}>
-                            <h3>Goals</h3>
+                            <h4>Goals</h4>
                         </a>
                     </div>
+                </div>
+                <div className={"me-content-column"}>
                     <div id={"about"}>
                         <h2>About</h2>
                         <p>{text_data.about_section}</p>
