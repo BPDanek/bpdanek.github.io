@@ -21,10 +21,10 @@ export default class ProjectsController extends React.Component<Props, State> {
                     {Object.keys(pages).map(
                         (pageKey: string, index: number) => {
                             return (<div className={"site-navigator-individual-button"}>
-                                <button className={"site-navigator-individual-button-itself"} onClick={() => {
+                                <button className={"site-navigator-individual-button-tag"} onClick={() => {
                                     return this.props.pageChangeParentReference(pages[pageKey])
                                 }}>
-                                    {<h2>{pages[pageKey]}</h2>}
+                                    {<p className={"site-navigator-individual-button-sub-tag"}>{pages[pageKey]}</p>}
                                 </button>
                             </div>)
                         }

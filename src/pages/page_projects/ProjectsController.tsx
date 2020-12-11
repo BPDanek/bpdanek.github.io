@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './styles.css';
 
-import * as data_asset from '../assets/Projects-Data/data.json'
-import ProjectsData from '../assets/Projects-Data/data_type_interface';
+import * as data_asset from '../../assets/Projects-Data/data.json'
+import ProjectsData from '../../assets/Projects-Data/data_type_interface';
 
 let projects_text_data: ProjectsData = data_asset
 
@@ -18,7 +18,7 @@ export default class ProjectsController extends React.Component<Props, State> {
             this.state = {current_post_index: 0}
         }
         else {
-            this.state = {current_post_index: -1}
+            this.state = {current_post_index: -1} // in case there are no projects to post about
         }
     }
 
@@ -33,12 +33,12 @@ export default class ProjectsController extends React.Component<Props, State> {
                     {
                         projects_text_data.projects.map((post_data, post_index) => {
                             return(
-                                <button onClick={
+                                <button className={"projects-page-navigation-column-button-tag"} onClick={
                                     () => {
                                         this.setState({current_post_index: post_index})
                                     }
                                 }>
-                                    <h4>{post_data[0]}</h4>
+                                    <p className={"projects-page-navigation-column-button-sub-tag"}>{post_data[0]}</p>
                                 </button>
                             );
                         })
@@ -53,6 +53,7 @@ export default class ProjectsController extends React.Component<Props, State> {
     renderPost() {
         return (
             <div>
+                <h2>{projects_text_data.projects[this.state.current_post_index][0]}</h2>
                 <p>{projects_text_data.projects[this.state.current_post_index][1]}</p>
             </div>
         );

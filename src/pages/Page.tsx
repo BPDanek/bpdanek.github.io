@@ -21,7 +21,7 @@ interface State {
 export default class Page extends React.Component<Props, State> {
     constructor(props) {
         super(props);
-        this.state = {page: pages.ME}
+        this.state = {page: pages.PROJECTS}
         this.handlePageChange = this.handlePageChange.bind(this) // bind this function to specifically this class, if referenced it will come back to here
     }
 

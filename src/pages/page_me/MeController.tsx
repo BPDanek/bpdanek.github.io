@@ -2,14 +2,14 @@ import * as React from 'react';
 import './styles.css';
 
 //images
-import image_of_me_headshot from '../assets/images/IMG_6700.jpeg';
-import github_logo from '../assets/images/github_logo.jpeg';
-import twitter_logo from '../assets/images/twitter_logo.jpeg';
-import linkedin_logo from '../assets/images/linkedin_logo.jpeg';
+import image_of_me_headshot from '../../assets/images/IMG_6700.jpeg';
+import github_logo from '../../assets/images/github_logo.jpeg';
+import twitter_logo from '../../assets/images/twitter_logo.jpeg';
+import linkedin_logo from '../../assets/images/linkedin_logo.jpeg';
 
 //content that is imported from a json
-import * as data_asset from '../assets/Me-Data/data.json';
-import MeData from '../assets/Me-Data/data_type_interface';
+import * as data_asset from '../../assets/Me-Data/data.json';
+import MeData from '../../assets/Me-Data/data_type_interface';
 
 interface Props {};
 interface State {};
