@@ -12,13 +12,11 @@ export const pages = {
     PROJECTS: 'Projects'
 }
 
-interface Props {};
-
 interface State {
     page: string;
 };
 
-export default class Page extends React.Component<Props, State> {
+export default class Page extends React.Component<State> {
     constructor(props) {
         super(props);
         this.state = {page: pages.PROJECTS}
