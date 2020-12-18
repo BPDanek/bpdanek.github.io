@@ -4,7 +4,7 @@
   "description": "personal site, designed and implemented by myself.  For setup, followed the digital ocean guide: https://www.digitalocean.com/community/tutorials/react-typescript-with-react",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
