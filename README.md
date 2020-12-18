@@ -1,7 +1,9 @@
 # denbanek
 personal site, designed and implemented by myself. 
-For setup, followed the digital ocean guide:
+For setup, followed the pluralsight and digital ocean guides loosly:
 https://www.digitalocean.com/community/tutorials/react-typescript-with-react
+
+Corey Housee's guide helped me wrap my head around why and when to use bundlers, transpilers for my webapp.
 
 A note about this page from the builder:
 
@@ -15,7 +17,6 @@ New Relic, where I got to build a nice UI for the first time with HTML, CSS and 
 great visual artist by following this subset of software engineering. This site is intended to be both a part of 
 my portfolio, but also the portfolio. It's empty now, hopefully not for long. 
 
-
 I learned how to use TS + React @ New Relic Inc. and decided to update my site.
 Tried to implement this in another language first, but found that TSX was the way to go. 
 
@@ -24,7 +25,10 @@ my way thorugh the whole build process. This time I read through the MDN Docs:
 https://developer.mozilla.org/en-US/docs/Learn/HTML
 https://developer.mozilla.org/en-US/docs/Learn/CSS
 
-Color inspiration found at: https://material.io/design/
+I also found the snowpack, and babel docs helpful:
+
+
+Some color inspiration found at: https://material.io/design/
 
 A special mention goes to the ```display``` attribute for being an MVP with layout.
 
@@ -33,6 +37,4 @@ to make a good data ingestion scheme for quickly pushing to the site. To see wha
 ```~/src/assets/Me-Data/``` to see how I currently add content to the site.
 
 todo: 
-- update readme w/ discription of app
-- confirm that the app can be distributed well with git clone
-    - include steps to rerpduce site
+- upgrade to mobile friendly interface (react native or bootstrap)
