@@ -1,5 +1,17 @@
 import * as React from "react";
-import { render } from 'react-dom';
 import Page from "./pages/Page";
 
-render(<Page page={"Projects"} />, document.querySelector('#main'));
+interface AppProps {}
+
+function App({}: AppProps): any {
+    // Return the App component.
+    return (
+        <div className="App">
+            <header className="App-header">
+                <Page page={"Projects"}/>
+            </header>
+        </div>
+    );
+}
+
+export default App;

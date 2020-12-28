@@ -1,25 +1,31 @@
 {
   "name": "denbanek",
   "version": "1.0.0",
-  "description": "personal site, designed and implemented by myself.  For setup, followed the digital ocean guide: https://www.digitalocean.com/community/tutorials/react-typescript-with-react",
-  "main": "index.js",
+  "description": "personal website",
+  "main": "src/index.tsx",
   "scripts": {
-    "start": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "snowpack dev",
+    "test": "echo \"Error: no test -ben\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BPDanek/denbanek.git"
+  },
+  "author": "BPDanek",
   "license": "ISC",
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "src": "^1.1.2",
-    "ts-node": "^9.0.0"
+  "bugs": {
+    "url": "https://github.com/BPDanek/denbanek/issues"
   },
+  "homepage": "https://github.com/BPDanek/denbanek#readme",
   "devDependencies": {
-    "@types/react": "^16.9.48",
-    "@types/react-dom": "^16.9.8",
-    "parcel-bundler": "^1.12.4",
-    "typescript": "^4.0.2"
-  }
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-react-refresh": "^2.3.9",
+    "@snowpack/plugin-typescript": "^1.1.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "snowpack": "^2.18.5"
+  },
+  "dependencies": {}
 }
