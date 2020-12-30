@@ -1,0 +1,37 @@
+.site-navigator-container {
+    background: #ffffffff;
+    padding: 10px 10px 10px 10px;
+    height: 40px;
+}
+
+.site-navigator-flex-wrapper {
+    display: flex;
+}
+.site-navigator-individual-button {
+    width: 30%; /* anything above 30% produces the same result? */
+}
+
+.site-navigator-individual-button-tag {
+    background-color: #ffffffff;
+
+    border: 0.5px;
+    border-style: solid;
+    border-radius: 5px;
+    width: 99%;
+    height: 45px;
+
+    transition-duration: 0.4s;
+}
+
+.site-navigator-individual-button-tag:hover {
+    background-color: #C3D4E2;
+}
+
+.site-navigator-individual-button-sub-tag {
+    font-family: Arial;
+
+    margin-top: 10px; /* to center text when font changes */
+    text-align: center; /* affects margin-top */
+    font-size: 15pt; /* affects margin-top */
+}
+

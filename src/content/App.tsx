@@ -2,6 +2,4 @@ import * as React from "react";
 import { render } from 'react-dom';
 import Page from "./pages/Page";
 
-export default function App() {
-    return <Page page={"Projects"} />
-}
+render(<Page page={"Projects"} />, document.querySelector('#main'));
