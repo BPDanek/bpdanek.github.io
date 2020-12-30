@@ -1,0 +1,54 @@
+.me-page-flexbox-wrapper {
+    display: flex;
+    font-family: Georgia;
+    padding-left: 8px;
+    padding-right: 20px;
+}
+
+.me-bio-column {
+    background: #f3f3f3ff;
+    padding: 10px 15px 10px 15px; /* clockwise directions (top, right, bottom, left) */
+    flex: 20%;
+    border-radius: 10px;
+}
+
+.me-content-column {
+    padding-left: 15px;
+    background: #ffffffff;
+    flex: 80%;
+}
+
+.me-content-column p {
+    padding-left: 40px;
+}
+
+.me-bio-column p {
+    margin: 10px;
+}
+
+.me-bio-column-bio {
+    padding-bottom: 20px;
+}
+
+.me-bio-column-image {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.me-bio-column-links {
+    display: flex;
+}
+
+.Github-link, .LinkedIn-link, .Twitter-link {
+    margin: 5px;
+    height: 20px;
+}
+
+a:link, a:visited, a:active  {
+    color: black;
+}
+
+
