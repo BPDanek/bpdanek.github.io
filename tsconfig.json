@@ -1,12 +1,21 @@
 {
+  "include": ["src", "types"],
   "compilerOptions": {
-    "outDir": "./dist/",
-    "target": "es5",
-    "module": "es6",
-    "jsx": "react",
-    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "baseUrl": "./",
+    /* paths - If you configure Snowpack import aliases, add them here. */
+    "paths": {},
+    /* noEmit - Snowpack builds (emits) files, not tsc. */
+    "noEmit": true,
+    /* Additional Options */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "sourceMap": true
+    "importsNotUsedAsValues": "error"
   }
 }
