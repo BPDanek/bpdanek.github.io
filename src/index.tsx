@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import PageManager from "./PageManager"
 
 ReactDOM.render(
-    <h1>
-        hello, ben
-    </h1>,
+    <div>
+        <PageManager />
+    </div>,
     document.getElementById("root")
 );
