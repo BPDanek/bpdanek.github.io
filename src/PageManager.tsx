@@ -1,12 +1,7 @@
 import "./declaration.d.ts"
 import React from "react"
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 import temp_image from "./assets/mEngine.jpg";
+import './styles.css'
 
 export default class PageManager extends React.Component {
     constructor(props: any) {
@@ -34,8 +29,8 @@ export default class PageManager extends React.Component {
 
     renderGeneralSite(): JSX.Element {
         return (
-            <div>
-                <h1>hellofromsite</h1>
+            <div className={"bensthing"}>
+                <h1>hellofromsite22</h1>
                 {console.log(this.state)}
                 <div>
                     <img src={temp_image} alt={"alternative_img"}/>
