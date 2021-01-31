@@ -1,3 +1,4 @@
+import "./declaration.d.ts"
 import React from "react"
 import {
     BrowserRouter as Router,
@@ -5,8 +6,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-
-const image1 = require("./assets/imageedit_3_2660010135.png")
+import temp_image from "./assets/mEngine.jpg";
 
 export default class PageManager extends React.Component {
     constructor(props: any) {
@@ -37,6 +37,9 @@ export default class PageManager extends React.Component {
             <div>
                 <h1>hellofromsite</h1>
                 {console.log(this.state)}
+                <div>
+                    <img src={temp_image} alt={"alternative_img"}/>
+                </div>
             </div>
         )
     }

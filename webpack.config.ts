@@ -4,6 +4,7 @@ import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 const config: webpack.Configuration = {
     entry: "./src/index.tsx",
+    mode: "production",
     module: {
         rules: [
             {
@@ -21,13 +22,9 @@ const config: webpack.Configuration = {
                 },
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                    },
-                ],
-            },
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'file-loader'
+            }
         ],
     },
     resolve: {
@@ -43,12 +40,7 @@ const config: webpack.Configuration = {
         port: 4000,
     },
     plugins: [
-        new ForkTsCheckerWebpackPlugin({
-            async: false,
-            eslint: {
-                files: "./src/**/*",
-            },
-        }),
+        new ForkTsCheckerWebpackPlugin(),
     ],
 };
 
