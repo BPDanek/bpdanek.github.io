@@ -1,4 +1,9 @@
-.bensthing {
-    background-color: red;
-    background: red;
+.header_img {
+    width: 50%;
+    display:block;
+    margin:auto;
+}
+
+.nav_image {
+    width: 30px;
 }
