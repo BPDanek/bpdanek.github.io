@@ -1,11 +1,13 @@
 import "./declaration.d.ts";
 import React from "react";
 import "./styles.css";
-import About from "./pages/About";
+import About_page from "./pages/About";
+import Projects_page from "./pages/Projects";
+import Timeline_page from "./pages/Timeline";
 
-import about_banner from "./assets/mEngine.jpg";
-import project_banner from "./assets/mSteerShift.jpg"; //todo: add
-import timeline_banner from "./assets/pipes.jpg"; //todo: add
+import about_header from "./assets/mEngine.jpg";
+import project_header from "./assets/mSteerShift.jpg"; //todo: add
+import timeline_header from "./assets/pipes.jpg"; //todo: add
 
 import about_icon from "./assets/about.png";
 import projects_icon from "./assets/projects.png";
@@ -18,6 +20,11 @@ enum ServablePages {
     timeline
 }
 
+// default pages
+const DEFAULTDISPLAYPAGE = ServablePages.about
+const DEFAULTHEADER = about_header
+const DEFAULTBODY = <About_page />
+
 // todo: resolve this at some point
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {
@@ -26,7 +33,8 @@ interface Props {
 
 interface State {
     displayedPage: ServablePages,
-    banner: string
+    header: string // really its the path to an image
+    body: any
 }
 
 export default class PageManager extends React.Component<Props, State> {
@@ -34,62 +42,70 @@ export default class PageManager extends React.Component<Props, State> {
         super(props)
 
         this.state = {
-                displayedPage: ServablePages.about, // default page
-                banner: about_banner // default banner
+            displayedPage: DEFAULTDISPLAYPAGE, // default page
+            header: DEFAULTHEADER, // default HEADER
+            body: <About_page />
         };
     }
 
-    // updates state variables {displayedPage, banner} according to parameter
-    // note: this doesnt have the fancy declaration in the
-    // constructor: "this.handleStateChange = this.handleStateChange.bind(this)" or whatever
-    handleStateChange(page: ServablePages): void {
-        // doing my best to write clean code!
+    handlePageChange(new_page: ServablePages): void {
 
-        let new_banner = about_banner
-        if (page == ServablePages.about) {
-            new_banner = about_banner
+        let new_header = DEFAULTHEADER // an image
+        let new_body = DEFAULTBODY //.tsx element
+
+        if (new_page == ServablePages.about) {
+            new_header = about_header
+            new_body = <About_page />
         }
-        else if (page == ServablePages.projects) {
-            new_banner = project_banner
+        else if (new_page == ServablePages.projects) {
+            new_header = project_header
+            new_body = <Projects_page />
         }
-        else if (page == ServablePages.timeline) {
-            new_banner = timeline_banner
+        else if (new_page == ServablePages.timeline) {
+            new_header = timeline_header
+            new_body = <Timeline_page />
         }
 
-        this.setState({displayedPage: page, banner: new_banner})
+        this.setState({displayedPage: new_page, header: new_header, body: new_body})
     }
 
     renderHeader(): JSX.Element {
         return (
-            <div>
-                <img src={this.state.banner} className={"header_img"}/>
+            <div className={"header_img_container"}>
+                <img src={this.state.header} className={"header_img"}/>
             </div>
         )
+    }
+
+    renderBody(): JSX.Element {
+        return (
+            <div>{this.state.body}</div>
+        );
     }
 
     renderNav(): JSX.Element {
         return (
             <div>
-                <nav>
+                <nav className={"pagemanager_nav"}>
                     <ul>
-                        <li>
+                        <li className={"navbar_li"}>
                             <img src={about_icon} alt={"About Page navigation icon"} className={"nav_image"}
                                  onClick={
-                                     () => {this.handleStateChange(ServablePages.about)}
+                                     () => {this.handlePageChange(ServablePages.about)}
                                  }
                             />
                         </li>
-                        <li>
+                        <li className={"navbar_li"}>
                             <img src={projects_icon} alt={"Projects Page navigation icon"} className={"nav_image"}
                                  onClick={
-                                     () => {this.handleStateChange(ServablePages.projects)}
+                                     () => {this.handlePageChange(ServablePages.projects)}
                                  }
                             />
                         </li>
-                        <li>
+                        <li className={"navbar_li"}>
                             <img src={timeline_icon} alt={"Timeline Page navigation icon"} className={"nav_image"}
                                  onClick={
-                                     () => {this.handleStateChange(ServablePages.timeline)}
+                                     () => {this.handlePageChange(ServablePages.timeline)}
                                  }
                             />
                         </li>
@@ -99,18 +115,12 @@ export default class PageManager extends React.Component<Props, State> {
         );
     }
 
-    renderSiteBody(): JSX.Element {
-        return (
-            <div><h3>site body</h3></div>
-        );
-    }
-
     render() {
         return (
             <div>
                 {this.renderHeader()}
                 {this.renderNav()}
-                {this.renderSiteBody()}
+                {this.renderBody()}
             </div>
         );
     }

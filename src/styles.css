@@ -1,9 +1,34 @@
-.header_img {
-    width: 50%;
-    display:block;
-    margin:auto;
+.header_img_container {
+    background: green;
 }
 
+.header_img {
+    /* center image */
+    display: block;
+    margin: auto;
+
+    /* make the window for a header to appear in */
+    /* fit the object to the given height + width parameters */
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+
+    /*todo:  position the header image within the window made above */
+}
+
+/* keep navbar items to the right of the page */
+.pagemanager_nav {
+    float: right;
+    padding-right: 40px;
+}
+
+/* make navbar items appear horizontally */
+.navbar_li {
+    margin-left: 10px;
+    display: inline;
+}
+
+/* restrict size of navigation item image*/
 .nav_image {
-    width: 30px;
+    width: 40px;
 }
