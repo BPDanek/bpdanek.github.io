@@ -1,19 +1,18 @@
-.header_img_container {
-    background: green;
-}
-
 .header_img {
     /* center image */
     display: block;
-    margin: auto;
+
+    /* todo: fix these oversized margins, this is not good code practice*/
+    /* ovesize margins to stretch header image to edge of screen*/
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
 
     /* make the window for a header to appear in */
     /* fit the object to the given height + width parameters */
     object-fit: cover;
-    width: 100%;
-    height: 200px;
-
-    /*todo:  position the header image within the window made above */
+    width: 130%; /* need oversized image for oversized margins */
+    height: 250px;
 }
 
 /* keep navbar items to the right of the page */
@@ -31,4 +30,5 @@
 /* restrict size of navigation item image*/
 .nav_image {
     width: 40px;
+    border-radius: 9px;
 }

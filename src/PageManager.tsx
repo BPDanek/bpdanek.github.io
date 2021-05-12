@@ -5,9 +5,9 @@ import About_page from "./pages/About";
 import Projects_page from "./pages/Projects";
 import Timeline_page from "./pages/Timeline";
 
-import about_header from "./assets/mEngine.jpg";
-import project_header from "./assets/mSteerShift.jpg"; //todo: add
-import timeline_header from "./assets/pipes.jpg"; //todo: add
+import about_header from "./assets/pixel_mEngine.jpg";
+import project_header from "./assets/pixel_mSteerShift.jpg";
+import timeline_header from "./assets/pixel_pipes.jpg";
 
 import about_icon from "./assets/about.png";
 import projects_icon from "./assets/projects.png";

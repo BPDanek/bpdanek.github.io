@@ -1,0 +1,55 @@
+
+/* a body contaier is the parent of every single page renderr function.
+This css affects all pages */
+.body-container {
+    position: relative;
+
+    left: 50px; /* move the entire body box to the __px from the left*/
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    color: #000000;
+}
+
+/* attirbute specific to About.tsx */
+/* similar to body-container */
+/* this is a body container specifically made for the About page, since it is a bit different (with the profile photo and all)*/
+.about-body-container {
+    position: relative;
+
+    top: -80px; /* move the whole container up __px */
+}
+
+/* all pages should have similar style, use a single stylesheet for this */
+.title, .get-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 41px;
+
+    color: #000000;
+}
+
+/* attirbute specific to About.tsx */
+.profile-photo {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+}
+
+/* attirbute specific to About.tsx */
+.get-name {
+
+}
+
+/* attirbute specific to About.tsx */
+.get-title {
+
+}
+
+/* attirbute specific to About.tsx */
+.get-abstract {
+
+}
