@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PageManager from "./PageManager"
+import "./styles.css";
+import Main from "./Main"
 
 ReactDOM.render(
-    <div>
-        <PageManager />
+    <div className={"site-container"}>
+        <Main />
     </div>,
     document.getElementById("root")
 );

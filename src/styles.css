@@ -1,34 +1,42 @@
-.header_img {
-    /* center image */
-    display: block;
-
-    /* todo: fix these oversized margins, this is not good code practice*/
-    /* ovesize margins to stretch header image to edge of screen*/
-    margin-top: -20px;
-    margin-left: -20px;
-    margin-right: -20px;
-
-    /* make the window for a header to appear in */
-    /* fit the object to the given height + width parameters */
-    object-fit: cover;
-    width: 130%; /* need oversized image for oversized margins */
-    height: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    background-color: #DBDBDB;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* keep navbar items to the right of the page */
-.pagemanager_nav {
-    float: right;
-    padding-right: 40px;
+.welcome-message{
+    margin-top: 200px;
+    text-align: center;
 }
 
-/* make navbar items appear horizontally */
-.navbar_li {
-    margin-left: 10px;
-    display: inline;
+.name-name {
+    text-align: center;
 }
 
-/* restrict size of navigation item image*/
-.nav_image {
-    width: 40px;
-    border-radius: 9px;
+.profile-photo-wrapper {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 110px;
+    border-radius: 50%;
+}
+
+.links {
+    text-align: center;
+}
+
+.linkedin-image {
+    width: 50px;
+    border-radius: 30%;
+    padding: 6px;
+}
+
+.github-image {
+    width: 50px;
+    padding: 6px;
+}
+.twitter-image {
+    width: 50px;
+    padding: 6px;
 }
