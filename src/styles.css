@@ -4,8 +4,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.welcome-message{
+.welcome-message {
     margin-top: 200px;
+    text-align: center;
+}
+
+.headline, .welcome-message {
     text-align: center;
 }
 
