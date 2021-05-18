@@ -1,3 +1,4 @@
+Starting a new development approach: build an MVP, and scale it up (as opposed to a big one later on).
 I like organized code, but mostly I hate implicit information (in this case duck typing).
 new attempt, this time with webpack instead of snowpack. 
 
