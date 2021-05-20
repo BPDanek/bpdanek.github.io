@@ -5,7 +5,8 @@ import Faceshot from "./assets/faceshot.png";
 import LinkedIn from "./assets/linkedIn.png";
 import GitHub from "./assets/github.png";
 import Twitter from "./assets/twitter.png";
-import Timeline from "./assets/Group 20.png";
+import Resume from "./assets/resumeIcon.png";
+import Timeline from "./assets/timelineImage.png";
 
 interface Props {}
 
@@ -19,15 +20,15 @@ export default class PageManager extends React.Component<Props, State> {
     render() {
         return (
             <div>
-                {/*<h2 className={"welcome-message"}>Welcome! This website is under construction. </h2>*/}
-                <div className={"timeline"}>
-                    <img src={Timeline}/>
-                </div>
+                <h2 className={"welcome-message"}>Welcome! This website is under construction. </h2>
                 <h1 className={"name-name"}><b>Benjamin Danek</b></h1>
                 <div className={"profile-photo-wrapper"}>
                     <img className={"profile-photo"} src={Faceshot} alt={"Profile Photo"} />
                 </div>
                 <h2 className={"headline"}>Full stack software engineer, aspiring roboticist.</h2>
+                <div className={"timeline"}>
+                    <img className={"timeline-image"} src={Timeline}/>
+                </div>
                 <div className={"links"}>
                     <h3>Any of these are good contacts:</h3>
                     <a href={"https://www.linkedin.com/in/benjaminpdanek/"}>
@@ -38,6 +39,9 @@ export default class PageManager extends React.Component<Props, State> {
                     </a>
                     <a href={"https://twitter.com/Benjamindanek"}>
                         <img className={"twitter-image"} src={Twitter} alt={"Twitter"}/>
+                    </a>
+                    <a href={"https://twitter.com/Benjamindanek"}>
+                        <img className={"resume-icon"} src={Resume} alt={"Resume"}/>
                     </a>
                 </div>
             </div>

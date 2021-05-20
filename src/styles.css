@@ -5,12 +5,20 @@
 }
 
 .welcome-message {
-    margin-top: 200px;
     text-align: center;
 }
 
 .headline, .welcome-message {
     text-align: center;
+}
+
+.timeline {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.timeline-image{
+    width: 90%;
 }
 
 .name-name {
@@ -33,14 +41,20 @@
 .linkedin-image {
     width: 50px;
     border-radius: 30%;
-    padding: 6px;
+    padding: 8px;
 }
 
 .github-image {
     width: 50px;
+    border-radius: 30%;
     padding: 6px;
 }
 .twitter-image {
     width: 50px;
     padding: 6px;
+}
+
+.resume-icon {
+    width: 50px;
+    padding: 4px;
 }
