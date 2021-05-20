@@ -26,9 +26,9 @@ export default class PageManager extends React.Component<Props, State> {
                     <img className={"profile-photo"} src={Faceshot} alt={"Profile Photo"} />
                 </div>
                 <h2 className={"headline"}>Full stack software engineer, aspiring roboticist.</h2>
-                <div className={"timeline"}>
-                    <img className={"timeline-image"} src={Timeline}/>
-                </div>
+                {/*<div className={"timeline"}>*/}
+                {/*    <img className={"timeline-image"} src={Timeline}/>*/}
+                {/*</div>*/}
                 <div className={"links"}>
                     <h3>Any of these are good contacts:</h3>
                     <a href={"https://www.linkedin.com/in/benjaminpdanek/"}>
