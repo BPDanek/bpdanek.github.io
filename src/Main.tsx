@@ -40,7 +40,7 @@ export default class PageManager extends React.Component<Props, State> {
                     <a href={"https://twitter.com/Benjamindanek"}>
                         <img className={"twitter-image"} src={Twitter} alt={"Twitter"}/>
                     </a>
-                    <a href={"https://github.com/BPDanek/bpdanek.github.io/blob/fast_update/src/assets/Benjamin_Danek_Resume_General.pdf"}>
+                    <a href={"https://twitter.com/Benjamindanek"}>
                         <img className={"resume-icon"} src={Resume} alt={"Resume"}/>
                     </a>
                 </div>
