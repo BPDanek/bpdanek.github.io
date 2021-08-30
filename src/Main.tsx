@@ -6,13 +6,10 @@ import LinkedIn from "./assets/linkedIn.png";
 import GitHub from "./assets/github.png";
 import Twitter from "./assets/twitter.png";
 import Resume from "./assets/resumeIcon.png";
-import Timeline from "./assets/timelineImage.png";
 
-interface Props {}
+import About from "./subsection/About";
 
-interface State {}
-
-export default class PageManager extends React.Component<Props, State> {
+export default class Main extends React.Component {
     constructor(props: any) {
         super(props)
     }
@@ -25,7 +22,7 @@ export default class PageManager extends React.Component<Props, State> {
                 <div className={"profile-photo-wrapper"}>
                     <img className={"profile-photo"} src={Faceshot} alt={"Profile Photo"} />
                 </div>
-                <h2 className={"headline"}>Full stack software engineer, aspiring roboticist.</h2>
+                <h2 className={"headline"}>Full stack software engineer, aspiring entrepreneur.</h2>
                 {/*<div className={"timeline"}>*/}
                 {/*    <img className={"timeline-image"} src={Timeline}/>*/}
                 {/*</div>*/}
@@ -44,6 +41,10 @@ export default class PageManager extends React.Component<Props, State> {
                         <img className={"resume-icon"} src={Resume} alt={"Resume"}/>
                     </a>
                 </div>
+                {/*<div className={"subsections"}>*/}
+                {/*    <About />*/}
+                {/*</div>*/}
+                {/*<Skills />*/}
             </div>
         );
     }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 * {
-    background-color: #DBDBDB;
+    /*background-color: #DBDBDB;*/
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -11,15 +11,6 @@
 
 .headline, .welcome-message {
     text-align: center;
-}
-
-.timeline {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.timeline-image{
-    width: 90%;
 }
 
 .name-name {
@@ -58,4 +49,11 @@
 .resume-icon {
     width: 50px;
     padding: 4px;
+}
+
+.subsections {
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    right: 15%;
 }
