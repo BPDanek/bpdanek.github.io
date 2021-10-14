@@ -22,7 +22,7 @@ export default class Main extends React.Component {
                 <div className={"profile-photo-wrapper"}>
                     <img className={"profile-photo"} src={Faceshot} alt={"Profile Photo"} />
                 </div>
-                <h2 className={"headline"}>Full stack software engineer, aspiring entrepreneur.</h2>
+                <h2 className={"headline"}>Software engineer, interested in deep tech startups.</h2>
                 {/*<div className={"timeline"}>*/}
                 {/*    <img className={"timeline-image"} src={Timeline}/>*/}
                 {/*</div>*/}
