@@ -1,0 +1,111 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Benjamin Danek
+    - name: Email
+      value: [lastname][firstname]@gmail.com
+    - name: Languages
+      value: English, Czech
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Bachelor of Science
+      institution: Arizona State University
+      year: 2021
+      description:
+        - Bachelor of Science in Computer Science
+        - 3.8 engineering GPA, 3.65 overall GPA
+        - Magna Cum Laude, 
+        - title: Fulton Undergraduate Research Initiative (FURI) Grant Recipient
+          contents:
+            - Defense Against Adversary, How safe is Machine Learning for Autonomous Driving?
+        - Engineering Projects in Computer Science (EPICS) Team Lead, Digital Whiskers
+
+    
+- title: Experience
+  type: time_table
+  contents:
+    - title: Graduate Research Assistant, SunLab
+      institution: University of Illinois at Urbana-Champaign, Champaign, IL
+      year: 2023 - present
+      description:
+        - SunLab, University of Illinois Urbana Champaign
+        - Use prompt engineering and multithreaded programming to implement networks of LLMs for information retrieval in clinical trial tasks in real time.        
+        - Utilize specialized generative language models to boost clinical classification model accuracy for underrepresented groups for MIMIC4 and eICU datasets.
+        - Facilitate domain specialized code generation using resource augmented generation (RAG).
+        - Contribute to open source deep learning toolkit, PyHealth.
+
+    - title: Machine Learning Research Scientist
+      institution: Center for Alzheimer's and Related Dimentias, National Institutes of Health, Bethesda, MD
+      year: 2023 - present
+      description:
+        - Leveraging AI to understand and develop treatment for neurodegenerative diseases. Supporting the Center for Alzheimer’s and Related Dimentias (CARD) advanced analytics team.
+        - Benchmark disease classification models trained using federated learning on distributed datasets against models trained centrally.
+        - Utilizing *-omic, and clinical data to generate multimodality patient representations.
+        - Develop prototype domain specialized generative AI assistant to improve cross institutional genetics research.
+
+    - title: Software Engineer
+      institution: New Relic Inc., San Francisco, CA
+      year: 2021 - 2023
+      description:
+        - Full stack software on Errors Inbox (SaaS) product team, where I operate within a 300,000 line code base implemented in Java and Typescript
+        - Developing an intuitive, responsive user interface using React, and GraphQL.
+        - Implement automated testing, infrastructure monitoring, continuous integration for Java applications processing petabytes of application performance logs.
+        - Implement in architecture proposals, and product development planning.
+
+    - title: Undergraduate Research Assistant, Design Informatics Lab
+      institution: Arizona State University, Tempe, AZ
+      year: 2018 - 2019
+      description:
+        - Establish if it is possible to elicit behavior from deep reinforcement learning (RL) agents by augmenting the agent environment.
+        - Propose, and evaluate methods for remediating adversarial attack susceptibility of Deep RL agents
+
+    - title: Undergraduate Teaching Assistant, CSE 240 Introduction to Programming Languages.
+      institution: Arizona State University, Tempe, AZ
+      year: 2018
+      
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/sunlabuiuc/PyHealth/tree/master">PyHealth</a>
+      year: 2023 - present
+      description: A Deep Learning Python Toolkit for Healthcare Applications.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - Intramural Research Training Award, National Institute of Aging
+        - 3rd Coast AI for Health Bowl 2nd place, Northwestern University
+    - year: 2021
+      items:
+        - Magna Cum Laude, Arizona State University
+        - Golden State Award, Arizona State University
+    - year: 2019
+      items: 
+        - Fulton Undergraduate Research Initiative, ASU
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Generative Models
+      items: 
+        - Systems of language models
+        - LLM reasoning
+        - Resource augmented generation
+    - title: Prediction
+      items:
+        - Private, and fair predictive models on clinical, and *-omics.
+    - title: Federated Learning, and Distributed ML Systems
+      items:
+        - Federated learning
+        - Distributed ML systems
+        - Privacy preserving ML
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Nature photography, Skiing, Body building.

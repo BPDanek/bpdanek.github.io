@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bpdanek.github.io/sitemap.xml
