@@ -3,8 +3,6 @@
   contents:
     - name: Full Name
       value: Benjamin Danek
-    - name: Email
-      value: [lastname][firstname]@gmail.com
     - name: Languages
       value: English, Czech
 
