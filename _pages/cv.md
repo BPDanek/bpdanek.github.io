@@ -4,8 +4,8 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: benjamin_danek_cv.pdf
-description: Driven computer scientist specializing in AI and machine learning, with a proven track record in healthcare innovation and a strong foundation in full-stack software engineering.
+cv_pdf: example_pdf.pdf
+description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
 toc:
   sidebar: left
 ---
