@@ -35,11 +35,11 @@ jobs:
         value: ${{ github.repository }}
     - name: Install and Build 🔧
       run: |
+        bundle lock --add-platform x86_64-linux
         pip3 install --upgrade jupyter
         npm install -g mermaid.cli
         npm install -g purgecss
         export JEKYLL_ENV=production
-        bundle lock --add-platform x86_64-linux
         bundle exec jekyll build --lsi
         purgecss -c purgecss.config.js
     - name: Deploy 🚀
